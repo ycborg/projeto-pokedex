@@ -3,14 +3,16 @@ body {
     text-shadow: 0px 0px #333333;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #A7E1ED;
-    color: #333333;
+    background-image: url("../imagens/dia.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.8s ease-in-out;
 }
 
 body.modo-escuro {
-    background-color: #333333;
-    color: #f5f5f5;
-    text-shadow: -1px 1px #000000;
+    background-image:url("../imagens/noite.jpg");
+    transition: 0.8s ease-in-out;
 }
 
 header {
@@ -46,6 +48,12 @@ main .cartao-pokemon:hover {
 
 main {
     padding: 25px;
+    color: #333333;
+    transition: none;
+}
+
+.modo-escuro main {
+    color: #f5f5f5;
 }
 
 main .listagem-pokemon {
@@ -91,7 +99,8 @@ main .cartao-pokemon .informacoes {
 main .cartao-pokemon .informacoes span {
     padding: 5px;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 11px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 main .cartao-pokemon .gif {
@@ -103,19 +112,24 @@ main .cartao-pokemon .tipos {
     display: flex;
     gap: 15px;
     max-height: 80px;
+    color: #f5f5f5;
+    text-shadow: 0px 1px #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
 }
 
 main .cartao-pokemon .tipo {
     padding: 8px;
     border-radius: 10px;
+    border: 2px outset #333333;
 }
 
 .grama {
-    background-color: #2DCD45;
+    background-color: #78C850;
 }
 
 .veneno {
-    background-color: #df67ddfb;
+    background-color: #A040A0;
 }
 
 .fogo {
@@ -123,7 +137,7 @@ main .cartao-pokemon .tipo {
 }
 
 .agua {
-    background-color: #149EFF;
+    background-color: #6890F0;
 }
 
 .inseto {
@@ -135,7 +149,7 @@ main .cartao-pokemon .tipo {
 }
 
 .dragao {
-    background-color: #700AEE;
+    background-color: #7038F8;
 }
 
 .normal {
@@ -146,7 +160,7 @@ main .cartao-pokemon .tipo {
     background-color: #F8D030;
 }
 
-.terrestre {
+.terra {
     background-color: #E0C068;
 }
 
@@ -155,11 +169,11 @@ main .cartao-pokemon .tipo {
 }
 
 .lutador {
-    background-color: #94352D;
+    background-color: #C03028;
 }
 
 .psiquico {
-    background-color: #FF6996;
+    background-color: #F85888;
 }
 
 .pedra {
@@ -175,11 +189,11 @@ main .cartao-pokemon .tipo {
 }
 
 .fantasma {
-    background-color: #614C83;
+    background-color: #705898;
 }
 
 .noturno {
-    background-color: #5C483B;
+    background-color: #705848;
 }
 
 main .descricao {
