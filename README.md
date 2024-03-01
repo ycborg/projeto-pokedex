@@ -1,4 +1,4 @@
-# Calculadora em C
+# Pokédex minimalista
 
 ### Descrição:
 É um site de uma Pokédex minimalista.
